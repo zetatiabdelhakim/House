@@ -1,0 +1,34 @@
+.search-result {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.search-result .bg-container .bg {
+  width: auto;
+  height: 130%;
+  margin: 0;
+  opacity: 0.3;
+}
+.search-result .bg-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 98%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: -2;
+}
+.search-result .Search-div {
+  margin-top: 20px;
+  position: absolute;
+  }
+.search-result .house-text2 {
+  z-index: -1;
+}
+
+.search-result .main .footer {
+  position: absolute;
+  bottom: 0;
+}

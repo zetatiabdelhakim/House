@@ -1,0 +1,28 @@
+.Search-div{
+    --grid : 1fr 1fr;
+    --color : #048F30;
+}
+@media screen and (max-width: 900px){
+    .Search-div{
+        --grid : 1fr;
+    }
+}
+.Search-div{
+    overflow: auto;
+    width: 98%;
+    padding: 10px;
+    border-top: 4px solid var(--color);
+    border-bottom: 4px solid var(--color);
+    display: grid;
+    grid-template-columns: var(--grid);
+    gap: 8px;
+}
+.Search-div::-webkit-scrollbar {
+    width: 5px;
+}
+.Search-div::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+.Search-div::-webkit-scrollbar-thumb {
+    background: #048F30;
+}

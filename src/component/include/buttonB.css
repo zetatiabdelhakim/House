@@ -1,0 +1,32 @@
+.profile-back .profile-back-button {
+  background-color: #4caf50;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+  width: 160px;
+  height: 50px;
+  flex-shrink: 0;
+  fill: #000;
+  border: solid black 1px;
+  border-radius: 1000px;
+  opacity: 0.6;
+  z-index: 2;
+  transform: scale(0.8);
+}
+.profile-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-back .profile-back-button i {
+  font-size: 20px;
+  width: 100%;
+}
+.profile-back .profile-back-button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all ease-in 0.3s;
+}

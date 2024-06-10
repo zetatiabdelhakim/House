@@ -1,0 +1,57 @@
+.header{
+    --margine : 30px;
+    --width_r : 163.398px;
+    --width_ic : 260.244px;
+}
+@media screen and (max-width: 1200px) {
+    .header{
+        --width_r : calc(163.398px * 0.9);
+        --width_ic : calc(260.244px * 0.9) ;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .header{
+        --width_r : calc(163.398px * 0.7);
+        --width_ic : calc(260.244px * 0.7) ;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .header{
+        --margine : 20px;
+        --width_r : 91.699px;
+        --width_ic : 150px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .header{
+        --width_r : calc(91.699px * 0.8);
+        --width_ic : calc(150px * 0.8) ;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .header{
+        --width_r : calc(91.699px * 0.6);
+        --width_ic : calc(150px * 0.6) ;
+    }
+  }
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header :is(.icon,.royaume){
+    margin-left: var(--margine);
+    margin-right: var(--margine);
+}
+.header .icon{
+    width: var(--width_ic);
+}
+.header .royaume{
+    width: var(--width_r);
+}

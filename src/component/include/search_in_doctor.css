@@ -1,0 +1,104 @@
+.search-in-doctor-input {
+  --width_input: 250px;
+  --height_input: 20px;
+}
+.search-in-doctor-section {
+  --flex-direction: none;
+}
+@media screen and (max-width: 1200px) {
+  .search-in-doctor-input {
+    --width_input: calc(250px * 0.9);
+    --height_input: calc(20px * 0.9);
+  }
+  .search-in-doctor-section {
+    --flex-direction: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .search-in-doctor-input {
+    --width_input: calc(250px * 0.7);
+    --height_input: calc(20px * 0.7);
+  }
+  .search-in-doctor-section {
+    --flex-direction: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .search-in-doctor-input {
+    --margine: 20px;
+    --width_input: 200px;
+    --height_input: 10px;
+  }
+  .search-in-doctor-section {
+    --flex-direction: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-in-doctor-input {
+    --width_input: 200px;
+    --height_input: 10px;
+  }
+  .search-in-doctor-section {
+    --flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-in-doctor-input {
+    --width_input: 200px;
+    --height_input: 20px;
+  }
+  .search-in-doctor-section {
+    --flex-direction: column;
+  }
+}
+
+.search-in-doctor-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: var(--flex-direction);
+  gap: 10px;
+  margin-top: 20px;
+}
+.search-in-doctor-click {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.search-in-doctor-input {
+  padding: 10px;
+  width: var(--width_input);
+  height: var(--height_input);
+  background: #9afcb8;
+  border: 0px;
+  border-radius: 30px;
+}
+
+.search-in-doctor-button {
+  padding: 10px;
+  background-color: #9afcb8;
+  color: black;
+  flex-shrink: 0;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.search-in-doctor-button:hover {
+  background: #048F30;
+  transform: scale(1.1);
+  transition: all ease-in 0.3s;
+}
+.search-in-doctor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

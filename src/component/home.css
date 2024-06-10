@@ -1,0 +1,46 @@
+.home {
+  --top_quote: 10%;
+  --top_house: -5%;
+  --bottom_search: 12%;
+}
+.home .bg-container .bg {
+  width: auto;
+  height: 120%;
+  margin: 0;
+  opacity: 0.4;
+}
+.home .bg-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 99%;
+  height: 98%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.home .main {
+  position: absolute;
+  top: 0;
+  width: 99%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.home .main .quote {
+  position: absolute;
+  top: var(--top_quote);
+}
+.home .main .house-text {
+  position: absolute;
+  top: var(--top_house);
+}
+.home .main .search {
+  position: absolute;
+  bottom: var(--bottom_search);
+}
+.home .main .footer {
+  position: absolute;
+  bottom: 0;
+}

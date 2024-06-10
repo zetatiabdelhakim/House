@@ -1,0 +1,45 @@
+.Profile .bg-container .bg {
+  width: auto;
+  height: 120%;
+  margin: 0;
+  opacity: 0.4;
+}
+.Profile .bg-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 99%;
+  height: 98%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.Profile .main {
+  position: absolute;
+  top: 0;
+  width: 99%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.Profile .house-text2 {
+  z-index: -1;
+}
+
+.Profile .main .footer {
+  position: absolute;
+  bottom: 0;
+}
+.Profile .profile-back {
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.Profile .profile-page {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

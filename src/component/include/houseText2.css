@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Inspiration';
+    src: url('../../font/Inspiration-Regular.ttf') format('truetype');
+  }
+.house-text2{
+    --text_color : #048F30; 
+    --font : 120px;
+
+}
+@media screen and (max-width: 1200px) {
+    .house-text2{
+        --font : 110px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .house-text2{
+        --font : 80px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .house-text2{
+        --font : 60px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .house-text2{
+        --font : 50px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .house-text2{
+        --font : 40px;
+    }
+  }
+
+
+
+  .house-text2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+  .house-text2 .text{
+    color: var(--text_color);
+    text-align: center;
+    font-family: Inspiration;
+    font-size: var(--font);
+  }

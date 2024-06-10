@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Inknut Antiqua';
+    src: url('../../font/InknutAntiqua-Bold.ttf') format('truetype');
+  }
+.quote{
+    --text_color : black; 
+    --width_q : 50%;
+    --font : 21px;
+
+}
+@media screen and (max-width: 1200px) {
+    .quote{
+        --width_q : 60%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .quote{
+        --width_q : 70%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .quote{
+        --width_q : 75%;
+        --font : 17px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .quote{
+        --width_q : 80%;
+        --font : 13px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .quote{
+        --width_q : 90%;
+    }
+  }
+
+
+
+  .quote{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+}
+  .quote .text{
+    color: var(--text_color);
+    text-align: center;
+    font-family: Inknut Antiqua;
+    font-size: var(--font);
+    width: var(--width_q);
+    text-align: center;
+  }
